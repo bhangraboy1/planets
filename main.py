@@ -1,7 +1,12 @@
-# This is a sample Python script.
+# This is code that models a small part of the solar system using Newtonian Mechanics
+# The code assumes a certain position, velocity, and mass and using the gravitational force
+# to project the elliptical motion of the planets
+#
+# Add all of the planets
+# Position the planets correctly
+# Add a rocket going from Earth to Mars i nthe correct launch window
+# Assess Launch Windows for trans planetary travel using correct speeds
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 import pygame
 import math
 
