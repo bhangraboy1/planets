@@ -26,7 +26,7 @@ class Planet:
     AU = 149.6e6 * 1000
     G = 6.67428e-11
     SCALE = 250 / AU
-    TIMESTEP = 60*60*24 / 2 # 1 day
+    TIMESTEP = 60*60*24 / 4 # 1 day
     #mass in kgs
     def __init__(self, x, y, radius, color, mass):
         self.x = x
@@ -123,12 +123,12 @@ def simulation():
     venus.yvel = -35.02 * 1000
 
     asteroid1 = Planet(2 * Planet.AU, Planet.AU, 2, BLUE, 2 * 10**22)
-    asteroid1.yvel = 0 * 1000
+    asteroid1.yvel = 1 * 1000
     asteroid2 = Planet(Planet.AU+1, Planet.AU+1, 2, WHITE, 2 * 10**22)
     asteroid2.yvel = 1 * 1000
     asteroid3 = Planet(1.5 * Planet.AU, Planet.AU, 2, RED, 2 * 10**22)
     asteroid3.yvel = 3.9 * 1000
-    planets = [sun, earth, mars, mercury, venus, asteroid1, asteroid2, asteroid3]
+    planets = [sun, earth, mars, mercury, venus, asteroid1]
     count = 0
 
     while run:
@@ -151,3 +151,4 @@ if __name__ == '__main__':
     simulation()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
